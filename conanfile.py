@@ -2,12 +2,13 @@ from conans import ConanFile
 from conans.tools import download, unzip
 import os
 
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 
 
 class CMakeCallFunction(ConanFile):
     name = "cmake-call-function"
     version = os.environ.get("CONAN_VERSION_OVERRIDE", VERSION)
+    requires = ("cmake-include-guard/master@smspillaz/cmake-include-guard", )
     generators = "cmake"
     url = "http://github.com/polysquare/cmake-call-function"
     licence = "MIT"

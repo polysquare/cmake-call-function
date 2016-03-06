@@ -9,6 +9,9 @@
 #
 # See /LICENCE.md for Copyright information
 
+include ("smspillaz/cmake-include-guard/IncludeGuard")
+cmake_include_guard (SET_MODULE_PATH)
+
 # cmake_call_function
 #
 # Call the 'callable' function named FUNCTION_NAME, passing arguments

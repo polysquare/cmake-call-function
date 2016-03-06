@@ -1,11 +1,11 @@
-# /CMakeCallFunction.cmake
+# /CallFunction.cmake
 #
 # Call functions dynamically by name. Internally, this function uses
 # variable_watch and a global property to keep track of how many times
 # a function has been called.
 #
 # Calling functions in this way can be quite slow and will increase
-# CMake's memory usage. It should be avoided if posible.
+# CMake's memory usage. It should be avoided if possible.
 #
 # See /LICENCE.md for Copyright information
 
@@ -22,7 +22,7 @@ cmake_include_guard (SET_MODULE_PATH)
 # arguments to the function are specified in a list variable named
 # CALLER_ARGN. That list can be parsed using a module like ParseArguments.
 #
-# Regular functions which specify their arugments after the function
+# Regular functions which specify their arguments after the function
 # name, or rely on ARGN, cannot be called with this function. The result
 # is not defined by this module.
 function (cmake_call_function FUNCTION_NAME)

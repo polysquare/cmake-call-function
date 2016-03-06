@@ -10,7 +10,6 @@ class CMakeCallFunctionConan(ConanFile):
     requires = ("cmake-include-guard/master@smspillaz/cmake-include-guard", )
     url = "http://github.com/polysquare/cmake-call-function"
     license = "MIT"
-    exports = "*"
 
     def source(self):
         zip_name = "cmake-call-function-master.zip"

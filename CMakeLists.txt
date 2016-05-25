@@ -9,7 +9,7 @@ cmake_minimum_required (VERSION 2.8 FATAL_ERROR)
 include ("${CMAKE_CURRENT_LIST_DIR}/conanbuildinfo.cmake")
 conan_basic_setup ()
 
-include ("cmake/cmake-module-common/Common")
+include ("cmake/cmake-module-common/Common" OPTIONAL)
 
 set (CMAKE_FILES
      "${CMAKE_CURRENT_LIST_DIR}/CallFunction.cmake"
